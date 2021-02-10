@@ -94,8 +94,120 @@ body {
   height: 0;
 }
 
+// section
+
+.section {
+
+    &-title {
+      text-align: center;
+      margin: 7.5rem 1.5rem 3rem 1.5rem;
+    }
+    &-center {
+      margin: 0 auto;
+      max-width: 1040px;
+    }
+    @media screen and (max-width: 769px) {
+      &-title { 
+        margin: 6rem 1.5rem 3rem 1.5rem;
+      }
+    }
+    @media screen and (max-width: 426px) {
+      &-title { 
+        margin: 4rem 1.5rem 3rem 1.5rem;
+      }
+    }
+  }
+//product
+
+.products {
+    text-align: center;
+  &-img {
+    display: inline-block;
+    margin: 0rem 0.625rem 0rem 0.625rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 1.563rem;
+  }
+  &-info {
+    text-align: center;       
+  }
+  &-name {
+    line-height: 0.4rem;
+    padding-top: 1.375px;
+    padding-bottom: 1px;
+    // margin-left: auto;
+    // margin-right: auto;    
+  }
+  &-price {  
+    line-height: 1.5rem;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  &-button {
+    display: inline-block;
+    font-family: "Bree", sans-serif;
+    letter-spacing: 0.08rem;
+    font-size: 0.875rem;
+    padding: 0.25rem 1rem;
+    border-radius: 12.5rem;
+    border: 1px solid $--clr-main-blue;
+    background: $--clr-main-blue;
+    color: #fff;
+    cursor: pointer;
+    margin: 0.75rem 0rem 2rem 0rem;
+  }
+}
+
+@media (min-width: 576px) {
+.products {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+}
+&-center{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  }
+
+  @media (min-width: 576px) {
+    .products-center{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    & {
+      flex: 0 0 calc(50% - 1rem);
+    }
+    }
+  @media (min-width: 600px) {
+    .products{
+      flex: 0 0 calc(33.333% - 1rem);
+    }
+  }
+  @media (max-width: 1000px) {
+    .products-text{
+      padding-bottom: 0;
+    }
+  }
 
 
 
-
-
+.button {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 6.25rem;
+    &-more {
+        display: inline-block;
+        font-family: "Bree", sans-serif;
+        letter-spacing: 0.06rem;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.625rem 2.5rem;
+        border-radius: 12.5rem;
+        border: 0.063rem solid $--clr-main-Yellow;
+        background: $--clr-main-Yellow;
+        color: $--clr-main-blue;
+        cursor: pointer;
+}
+}
