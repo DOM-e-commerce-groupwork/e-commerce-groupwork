@@ -23,12 +23,32 @@
           <div class="content">
             <a href="#"><img src="./img/logo.svg" class="logo"></a>
             <ul>
-              <!-- we need to make class each li-->
+
               <li onclick="toggleMenu()"><a href="#">About us</a></li>
               <li onclick="toggleMenu()"><a href="#">Contact</a></li>
               <li onclick="toggleMenu()"><a href="#">Shop</a></li>
               <li onclick="toggleMenu()"><a href="#"><img src="./img/user.svg"></a></li>
               <li onclick="toggleMenu()"><a href="#"><img src="./img/shopping-cart.svg"></a></li>
+              
+              <!-- cart -->
+              <div class="cart" id="cart">
+          
+                <!-- cart total -->
+                <div class="cart-total-container">
+                  <h2>Your cart</h2>
+                  
+                  <hr>
+                  <h3>Total</h3>
+                  <p id="cart-total"> $ 0.00</p>
+                </div>
+                
+                <!-- cart buttons -->
+                <div class="cart-buttons-container">
+                  <a href="#" id="cart-clear" class="text-link">Clear cart</a>
+                  <button href="#" id="cart-checkout" class="button-checkout">Checkout</button>
+                </div>
+                
+              </div>
             </ul>
           </div>
         </nav>
