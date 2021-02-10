@@ -12,27 +12,148 @@
     <meta name="keywords" content="Tea, Herbal, Matcha, blacktea, organic, canadian, Vancouver">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
     <title>Lisa's tea</title>
   </head>
 
   <body>
-    <div class="wrapper">
-      <nav class="main-menu">
-        <div class="content">
-          <img src="./img/logo.svg" class="logo" />
-          <ul>
-            <li onclick="toggleMenu()">About us</li>
-            <li onclick="toggleMenu()">Contact</li>
-            <li onclick="toggleMenu()">Shop</li>
-            <li onclick="toggleMenu()"><img src="./img/user.svg"</li>
-            <li onclick="toggleMenu()"><img src="./img/shopping-cart.svg"</li>
-          </ul>
-        </div>
-        </div>
-      </nav>
-      <section class="hero">
-        <div class="content">
-          <h1>Order organic, hand-picked, indigenous Canadian herbs on-line</h1>
-          <input type="text" placeholder="Search...">
-        </div>
+    <header>
+      <div class="wrapper">
+        <nav class="main-menu">
+          <div class="content">
+            <a href="#"><img src="./img/logo.svg" class="logo"></a>
+            <ul>
+              <!-- we need to make class each li-->
+              <li onclick="toggleMenu()"><a href="#">About us</a></li>
+              <li onclick="toggleMenu()"><a href="#">Contact</a></li>
+              <li onclick="toggleMenu()"><a href="#">Shop</a></li>
+              <li onclick="toggleMenu()"><a href="#"><img src="./img/user.svg"></a></li>
+              <li onclick="toggleMenu()"><a href="#"><img src="./img/shopping-cart.svg"></a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="hero">
+          <div class="content">
+            <h1>Order organic, hand-picked, indigenous Canadian herbs on-line</h1>
+            <input type="text" placeholder="Search...">
+          </div>
+        </section>  
+      </div>  
+    </header>
+      <!-- products -->
+    <section class="section-products" id="products">
+      <div class="section-title">
+          <h1>Products</h1>
+      </div>
+
+      <div class="section-center products-center">
+        <article class="products">
+          <a href="#">
+            <span class="products-photo">
+                      <img
+                          src="./img/herbal.png"
+                          alt="herbal-img"
+                          class="products-img"
+                      />
+                      </span>
+                  </a>
+                  <div class="products-info">
+                      <h3 class="products-name">Herbal tea</h3>
+                      <p class="products-price">$ 6.50</p>
+                      <button type="button" class="products-button">add to cart</button>
+                  </div>
+              </article>
+
+              <article class="products">
+                  <a href="#">
+                      <span class="products-photo">
+                      <img
+                          src="./img/black.png"
+                          alt="herbal-img"
+                          class="products-img"
+                      />
+                      </span>
+                  </a>
+                  <div class="products-info">
+                      <h3 class="products-name">Black Tea</h3>
+                      <p class="products-price">$ 5.50</p>
+                      <button type="button" class="products-button">add to cart</button>
+                  </div>
+              </article>
+
+              <article class="products">
+                  <a href="#">
+                      <span class="products-photo">
+                      <img
+                          src="./img/clear1.png"
+                          alt="herbal-img"
+                          class="products-img"
+                      />
+                      </span>
+                  </a>
+                  <div class="products-info">
+                      <h3 class="products-name">Clear glass</h3>
+                      <p class="products-price">$ 6.50</p>
+                      <button type="button" class="products-button">add to cart</button>
+                  </div>
+              </article>
+              <article class="products">
+                  <a href="#">
+                      <span class="products-photo">
+                      <img
+                          src="./img/matcha.png"
+                          alt="herbal-img"
+                          class="products-img"
+                      />
+                      </span>
+                  </a>
+                  <div class="products-info">
+                      <h3 class="products-name">Macha</h3>
+                      <p class="products-price">$ 4.50</p>
+                      <button type="button" class="products-button">add to cart</button>
+                  </div>
+              </article>
+
+              <article class="products">
+                  <a href="#">
+                      <span class="products-photo">
+                      <img
+                          src="./img/clear2.png"
+                          alt="herbal-img"
+                          class="products-img"
+                      />
+                      </span>
+                  </a>
+                  <div class="products-info">
+                      <h3 class="products-name">Clear glass cup</h3>
+                      <p class="products-price">$ 12.00</p>
+                      <button type="button" class="products-button">add to cart</button>
+                  </div>
+              </article>
+
+              <article class="products">
+                  <a href="#">
+                      <span class="products-photo">
+                      <img
+                          src="./img/ice.png"
+                          alt="herbal-img"
+                          class="products-img"
+                      />
+                      </span>
+                  </a>
+                  <div class="products-info">
+                      <h3 class="products-name">Ice tea</h3>
+                      <p class="products-price">$ 8.50</p>
+                      <button type="button" class="products-button">add to cart</button>
+                  </div>
+              </article>
+          </div>
+      <div class="button">
+          <button type="button" class="button-more">See more</button>
+      </div>
       </section>
+  
+      <!-- js -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
