@@ -1,0 +1,92 @@
+/* Colors: */
+/* Font/text values */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.main-menu {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.main-menu .logo {
+  height: 58px;
+}
+
+.main-menu .content {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-menu li {
+  display: inline-block;
+  font-family: "bree", sans-serif;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  color: #428584;
+}
+
+.hero {
+  background: url("../img/tea_cup.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  font-family: "bree", sans-serif;
+}
+
+.hero .content {
+  text-align: center;
+}
+
+.hero .content h1 {
+  color: white;
+  font-size: 3.4rem;
+  max-width: 900px;
+}
+
+.hero .content input {
+  border-radius: 50px;
+  border: none;
+  padding: 20px;
+  font-family: "bree", sans-serif;
+  width: 100%;
+  max-width: 545px;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */

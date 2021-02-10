@@ -1,0 +1,64 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.main-menu {
+  width: 100%;
+  padding: 10px 0;
+  .logo {
+    height: 58px;
+  }
+  .content {
+    float: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    display: inline-block;
+    font-family: $bree;
+    padding: 0 20px;
+    font-size: $font-size-18;
+    color: $primary-color-A;
+  }
+}
+
+.hero {
+  background: url('../img/tea_cup.jpg') center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-family: $bree;
+  .content {
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: $font-size-55;
+      max-width: 900px;
+    }
+    input {
+      border-radius: 50px;
+      border: none;
+      padding: 20px;
+      font-family: $bree;
+      width: 100%;
+      max-width: 545px;
+      margin-top: 30px;
+    }
+  }
+}
