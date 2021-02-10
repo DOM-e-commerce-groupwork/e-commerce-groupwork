@@ -124,17 +124,18 @@ body {
   &-img {
     display: inline-block;
     margin: 0rem 0.625rem 0rem 0.625rem;
-    width: 18px;
-    height: 18px;
+    width: 18rem;
+    height: 18rem;
     border-radius: 1.563rem;
   }
   &-info {
-    text-align: center;       
+    text-align: center;  
+    min-width: 18rem;
   }
   &-name {
     line-height: 0.4rem;
-    padding-top: 1.375px;
-    padding-bottom: 1px;
+    padding-top: 1.375rem;
+    padding-bottom: 1rem;
     // margin-left: auto;
     // margin-right: auto;    
   }
