@@ -17,6 +17,14 @@ body {
   letter-spacing: 0.013px;
 }
 
+.clearfix {
+  zoom: 1;
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+}
+
 .main-menu {
   width: 100%;
   padding: 10px 0;
@@ -64,6 +72,30 @@ body {
   color: #428584;
 }
 
+/* cart  */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: #ffffff;
+  top: 0;
+  right: 0;
+  width: 0;
+}
+
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+}
+
+/* cart item */
+.cart-item-remove {
+  color: #778281;
+}
+
+#cart-item-price {
+  font-size: 1.1rem;
+}
+
 .hero {
   background: url("../img/tea_cup.jpg") center no-repeat;
   background-size: cover;
@@ -105,12 +137,24 @@ body {
   margin-top: 30px;
 }
 
-.clearfix {
-  zoom: 1;
-  content: " ";
-  clear: both;
-  display: block;
-  height: 0;
+.button {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 6.25rem;
+}
+
+.button-more {
+  display: inline-block;
+  font-family: "bree", sans-serif;
+  letter-spacing: 0.06rem;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.625rem 2.5rem;
+  border-radius: 12.5rem;
+  border: 0.063rem solid #FEC33C;
+  background: #FEC33C;
+  color: #428584;
+  cursor: pointer;
 }
 
 .section-title {
@@ -138,26 +182,6 @@ body {
   .section-title {
     margin: 4rem 1.5rem 3rem 1.5rem;
   }
-}
-
-.button {
-  text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 6.25rem;
-}
-
-.button-more {
-  display: inline-block;
-  font-family: "bree", sans-serif;
-  letter-spacing: 0.06rem;
-  font-size: 1rem;
-  text-align: center;
-  padding: 0.625rem 2.5rem;
-  border-radius: 12.5rem;
-  border: 0.063rem solid #FEC33C;
-  background: #FEC33C;
-  color: #428584;
-  cursor: pointer;
 }
 
 .products {
