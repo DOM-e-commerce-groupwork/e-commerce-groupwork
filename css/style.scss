@@ -58,7 +58,7 @@ body {
 
 /* cart  */
 .cart {
-  position: absolute;
+  position: fixed;
   min-height: 10rem;
   background: $white-color;
   top: 0;
@@ -77,6 +77,11 @@ body {
 .cart-item-remove {
   color: $text-color;
   // transition: all 1s ease-in-out;
+}
+
+#cartboy {
+  flex-flow: column;
+  align-items: flex-start;
 }
 
 #cart-item-price {

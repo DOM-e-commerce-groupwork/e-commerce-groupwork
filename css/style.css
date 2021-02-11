@@ -74,7 +74,7 @@ body {
 
 /* cart  */
 .cart {
-  position: absolute;
+  position: fixed;
   min-height: 10rem;
   background: #ffffff;
   top: 0;
@@ -90,6 +90,16 @@ body {
 /* cart item */
 .cart-item-remove {
   color: #778281;
+}
+
+#cartboy {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #cart-item-price {
