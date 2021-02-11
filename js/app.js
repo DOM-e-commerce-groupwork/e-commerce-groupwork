@@ -3,12 +3,13 @@ let products = []
 const handleCartList = () => {
   const list = products.map(li => `<li>
     <p class="product-name">${li.name}</p>
-    <p class="product-price">$ ${li.price.toFixed(2)}</p>
     <span class="product-count">X ${li.count}</span>
+    <p class="product-price">$ ${li.price.toFixed(2)}</p>
   </li>`)
   
   document.getElementById("cartboy").innerHTML = products.length > 0 ? list.join("") : `<li></li>`;
 }
+
 
 const handleTotal = () => {
   const total = products.reduce((acc, cur) => acc += parseFloat(cur.price), 0)
@@ -37,7 +38,15 @@ const addToCart = (e) => {
   handleProducts(e)
   handleCartList()
   handleTotal()
+  alert("The item added to the cart")
 }
+
+const list = products.map(a => `<li>
+<p class="product-name">${li.name}</p>
+<span class="product-count">X ${li.count}</span>
+<p class="product-price">$ ${li.price.toFixed(2)}</p>
+</li>`)
+
 
 const clearCart = () => {
   products = []
@@ -49,3 +58,8 @@ const toggleDisplayCart = () => {
   var cart = document.getElementById('cart') // Using a class instead, see note below.
   cart.classList.toggle('show-cart');
 }
+
+
+// const addToCart =() => {
+
+// }
