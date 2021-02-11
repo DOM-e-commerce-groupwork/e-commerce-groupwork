@@ -28,26 +28,24 @@
               <li onclick="toggleMenu()"><a href="#">Contact</a></li>
               <li onclick="toggleMenu()"><a href="#">Shop</a></li>
               <li onclick="toggleMenu()"><a href="#"><img src="./img/user.svg"></a></li>
-              <li onclick="toggleMenu()"><a href="#"><img src="./img/shopping-cart.svg"></a></li>
+              <li onclick="toggleDisplayCart()"><a href="#"><img src="./img/shopping-cart.svg"></a></li>
               
               <!-- cart -->
               <div class="cart" id="cart">
-          
                 <!-- cart total -->
                 <div class="cart-total-container">
                   <h2>Your cart</h2>
-                  
                   <hr>
+                  <ul id="cartboy"></ul>
                   <h3>Total</h3>
-                  <p id="cart-total"> $ 0.00</p>
+                  <p id="cart-total"> Empty cart</p>
                 </div>
                 
                 <!-- cart buttons -->
                 <div class="cart-buttons-container">
-                  <a href="#" id="cart-clear" class="text-link">Clear cart</a>
+                  <button id="cart-clear" class="text-link" onclick="clearCart()">Clear cart</button>
                   <button href="#" id="cart-checkout" class="button-checkout">Checkout</button>
                 </div>
-                
               </div>
             </ul>
           </div>
@@ -80,7 +78,7 @@
                   <div class="products-info">
                       <h3 class="products-name">Herbal tea</h3>
                       <p class="products-price">$ 6.50</p>
-                      <button type="button" class="products-button">add to cart</button>
+                      <button type="button" class="products-button" onclick="addToCart(this)">add to cart</button>
                   </div>
               </article>
 
@@ -97,7 +95,7 @@
                   <div class="products-info">
                       <h3 class="products-name">Black Tea</h3>
                       <p class="products-price">$ 5.50</p>
-                      <button type="button" class="products-button">add to cart</button>
+                      <button type="button" class="products-button" onclick="addToCart(this)">add to cart</button>
                   </div>
               </article>
 
@@ -114,7 +112,7 @@
                   <div class="products-info">
                       <h3 class="products-name">Clear glass</h3>
                       <p class="products-price">$ 6.50</p>
-                      <button type="button" class="products-button">add to cart</button>
+                      <button type="button" class="products-button" onclick="addToCart(this)">add to cart</button>
                   </div>
               </article>
               <article class="products">
@@ -130,7 +128,7 @@
                   <div class="products-info">
                       <h3 class="products-name">Macha</h3>
                       <p class="products-price">$ 4.50</p>
-                      <button type="button" class="products-button">add to cart</button>
+                      <button type="button" class="products-button" onclick="addToCart(this)">add to cart</button>
                   </div>
               </article>
 
@@ -147,7 +145,7 @@
                   <div class="products-info">
                       <h3 class="products-name">Clear glass cup</h3>
                       <p class="products-price">$ 12.00</p>
-                      <button type="button" class="products-button">add to cart</button>
+                      <button type="button" class="products-button" onclick="addToCart(this)">add to cart</button>
                   </div>
               </article>
 
@@ -164,7 +162,7 @@
                   <div class="products-info">
                       <h3 class="products-name">Ice tea</h3>
                       <p class="products-price">$ 8.50</p>
-                      <button type="button" class="products-button">add to cart</button>
+                      <button type="button" class="products-button" onclick="addToCart(this)">add to cart</button>
                   </div>
               </article>
           </div>
