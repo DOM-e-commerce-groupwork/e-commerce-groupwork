@@ -26,7 +26,7 @@ body {
 .main-menu {
   position: fixed;
   width: 100%;
-  height: 78px;
+  height: 4.875rem;
   padding: 10px 0;
   background: $background-color;
   .logo {
@@ -66,7 +66,7 @@ body {
   position: fixed;
   min-height: 10rem;
   background: $background-color;
-  top: 78px;
+  top: 4.875rem;
   right: 0;
   width: 0;
   padding-bottom:50px;
@@ -159,8 +159,8 @@ body {
     border-radius: 12.5rem;
     border: 0.063rem solid $text-color;
     background: $background-color;
-    margin-top: 32px;
-    margin-right: 16px;
+    margin-top: 2rem;
+    margin-right: 1rem;
     color: $text-color;
     cursor: pointer;
   }
@@ -206,8 +206,8 @@ body {
     }
     @media screen and (max-width: 426px) {
     h1 { 
-        font-size: 45px;
-        line-height: 60px;
+        font-size: 2.813rem;
+        line-height: 3.75rem;
       }
     }
   }
@@ -364,7 +364,7 @@ ul.productList li.singleThumb {
   padding-bottom: 10px;
   margin-top: 40px;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: $white-color;
   background-color: $primary-color-A;
 }
