@@ -60,6 +60,4 @@ const toggleDisplayCart = () => {
 }
 
 
-// const addToCart =() => {
 
-// }
