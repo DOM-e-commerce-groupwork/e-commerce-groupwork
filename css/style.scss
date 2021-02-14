@@ -31,13 +31,14 @@ body {
   background: $background-color;
   .logo {
     height: 58px;
+    margin-left: 16px;
   }
   .content {
     float: none;
     display: flex;
     justify-content: space-between;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0px auto;
   }
   ul {
     display: flex;
@@ -46,8 +47,7 @@ body {
   }
   a {
     text-decoration: none;
-    color: $primary-color-A;
-    
+    color: $primary-color-A; 
   }
   li {
     list-style: none;
@@ -55,12 +55,13 @@ body {
     font-family: $bree;
     padding: 0 20px;
     font-size: $font-size-18;
-    color: $primary-color-A;
+    line-height: 18px;
+    color:$text-color;
+    cursor: pointer;
   }
 }
 
-
-/* cart  */
+/* cart */
 .cart {
   position: fixed;
   min-height: 10rem;
@@ -69,15 +70,14 @@ body {
   right: 0;
   width: 0;
   padding-bottom:50px;
-  // overflow: hidden;
-  & h2 {
-    padding-bottom:8px;
-  }
   & h3 {
     padding-top: 8px;
-    // padding-left: 20px;
   }
-  &-total p {
+  &-total {
+    color: $primary-color-A;
+    padding-left: 20px;    
+  }
+  &-total-title {
     padding-top: 8px;
   }
 }
@@ -91,19 +91,22 @@ body {
 .cart-item-remove {
   color: $text-color;
 }
-
 #cartboy {
   flex-flow: column;
   align-items: flex-start;
 }
-
 #cart-item-price {
   font-size: $font-size-18;
 }
+.product-name {
+  font-weight: 800;
+  padding-top: 10px;
+}
+.product-count {
+  line-height: 2px;
+}
 
-
-
-
+// hero
 .hero {
   background: url('../img/tea_cup.jpg') center no-repeat;
   background-size: cover;
@@ -113,13 +116,21 @@ body {
   align-items: center;
   flex-flow: column;
   font-family: $bree;
-  .content {
+  &-content {
     text-align: center;
+    margin: 0px 16px;
     h1 {
       color:$white-color;
       font-size: $font-size-55;
       line-height: $line-height-h1-h3;
       max-width: 900px;
+    }
+    @media screen and (max-width: 426px) {
+      h1 { 
+        font-size: 45px;
+        line-height: 60px;
+      }
+    }
     }
     input {
       border-radius: 50px;
@@ -129,9 +140,9 @@ body {
       width: 100%;
       max-width: 545px;
       margin-top: 30px;
+      outline: none;
     }
   }
-}
 
 // button
 .button {
@@ -165,6 +176,7 @@ body {
     background: $secondary-color;
     color: $primary-color-A;
     cursor: pointer;
+    outline: none;
   }
   &-more {
       display: inline-block;
@@ -178,11 +190,12 @@ body {
       background: $secondary-color;
       color: $primary-color-A;
       cursor: pointer;
+      outline: none;
+      margin: auto;
   }
 }
 
 // section
-
 .section {
   &-title {
     text-align: center;
@@ -191,27 +204,27 @@ body {
       font-size: $font-size-55;
       line-height: $line-height-h1-h3;
     }
+    @media screen and (max-width: 426px) {
+    h1 { 
+        font-size: 45px;
+        line-height: 60px;
+      }
+    }
+  }
+  &-products {
+    margin: auto;
+    text-align: center;   
   }
   &-center {
-    margin: 0 auto;
+    margin: auto;
     max-width: 1040px;
   }
-  @media screen and (max-width: 769px) {
-    &-title { 
-      margin: 6rem 1.5rem 3rem 1.5rem;
-    }
-  }
-  @media screen and (max-width: 426px) {
-    &-title { 
-      margin: 4rem 1.5rem 3rem 1.5rem;
-    }
+  &-location {
+    text-align: center;
   }
 }
 
-
-
 //product
-
 .products {
   text-align: center;
 &-img {
@@ -228,14 +241,11 @@ body {
 &-name {
   line-height: 0.4rem;
   padding-top: 1.375rem;
-  padding-bottom: 1rem;
-  // margin-left: auto;
-  // margin-right: auto;    
+  padding-bottom: 1rem;  
 }
 &-price {  
   line-height: 1.5rem;
-  // margin-left: auto;
-  // margin-right: auto;
+  color: $primary-color-A;
 }
 &-button {
   display: inline-block;
@@ -248,10 +258,10 @@ body {
   background: $primary-color-A;
   color: #fff;
   cursor: pointer;
+  outline: none;
   margin: 0.75rem 0rem 2rem 0rem;
 }
 }
-
 @media (min-width: 576px) {
 .products {
   flex: 0 0 calc(50% - 1rem);
@@ -263,7 +273,6 @@ body {
   flex-wrap: wrap;
 }
 }
-
 @media (min-width: 576px) {
   .products-center{
     display: flex;
@@ -284,3 +293,82 @@ body {
     padding-bottom: 0;
   }
 }
+
+// See more button action
+.productList .singleThumb {
+	display: none;
+  margin: auto;
+}
+ul.productList li.singleThumb {
+	overflow: hidden;
+}
+
+// Our Story
+.our {
+  &-img {
+    text-align: center;
+    
+
+  }
+  &-photo{
+    max-width: 1040px;
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1.563rem;
+
+  }
+  &-text p{
+    max-width: 1072px;
+    text-align: center;
+    padding: 35px 16px;
+    margin: auto;
+  }
+}
+
+// location
+.location {
+  &-block {
+    display: inline-block;      
+    text-align: center;
+  }
+  &-block-text {
+    text-align: center;
+  }
+  &-img {
+    text-align: center;
+  }
+  &-photo{
+    max-width: 620px;
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 1.563rem;
+    text-align: center;
+
+  }
+  &-text p{
+    text-align: left;
+    padding: 35px 16px;
+    color: $text-color;
+    a:link, a:visited {
+      color: $text-color;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  }
+}
+
+.copyright {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: $white-color;
+  background-color: $primary-color-A;
+}
+
+
+
+

@@ -35,6 +35,7 @@ body {
 
 .main-menu .logo {
   height: 58px;
+  margin-left: 16px;
 }
 
 .main-menu .content {
@@ -46,7 +47,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .main-menu ul {
@@ -72,10 +73,12 @@ body {
   font-family: "bree", sans-serif;
   padding: 0 20px;
   font-size: 1.1rem;
-  color: #428584;
+  line-height: 18px;
+  color: #778281;
+  cursor: pointer;
 }
 
-/* cart  */
+/* cart */
 .cart {
   position: fixed;
   min-height: 10rem;
@@ -86,15 +89,16 @@ body {
   padding-bottom: 50px;
 }
 
-.cart h2 {
-  padding-bottom: 8px;
-}
-
 .cart h3 {
   padding-top: 8px;
 }
 
-.cart-total p {
+.cart-total {
+  color: #428584;
+  padding-left: 20px;
+}
+
+.cart-total-title {
   padding-top: 8px;
 }
 
@@ -122,6 +126,15 @@ body {
   font-size: 1.1rem;
 }
 
+.product-name {
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+.product-count {
+  line-height: 2px;
+}
+
 .hero {
   background: url("../img/tea_cup.jpg") center no-repeat;
   background-size: cover;
@@ -142,18 +155,26 @@ body {
   font-family: "bree", sans-serif;
 }
 
-.hero .content {
+.hero-content {
   text-align: center;
+  margin: 0px 16px;
 }
 
-.hero .content h1 {
+.hero-content h1 {
   color: #ffffff;
   font-size: 3.4rem;
   line-height: 4.563rem;
   max-width: 900px;
 }
 
-.hero .content input {
+@media screen and (max-width: 426px) {
+  .hero-content h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+
+.hero input {
   border-radius: 50px;
   border: none;
   padding: 20px;
@@ -161,6 +182,7 @@ body {
   width: 100%;
   max-width: 545px;
   margin-top: 30px;
+  outline: none;
 }
 
 .button {
@@ -197,6 +219,7 @@ body {
   background: #FEC33C;
   color: #428584;
   cursor: pointer;
+  outline: none;
 }
 
 .button-more {
@@ -211,6 +234,8 @@ body {
   background: #FEC33C;
   color: #428584;
   cursor: pointer;
+  outline: none;
+  margin: auto;
 }
 
 .section-title {
@@ -223,21 +248,25 @@ body {
   line-height: 4.563rem;
 }
 
+@media screen and (max-width: 426px) {
+  .section-title h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+
+.section-products {
+  margin: auto;
+  text-align: center;
+}
+
 .section-center {
-  margin: 0 auto;
+  margin: auto;
   max-width: 1040px;
 }
 
-@media screen and (max-width: 769px) {
-  .section-title {
-    margin: 6rem 1.5rem 3rem 1.5rem;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .section-title {
-    margin: 4rem 1.5rem 3rem 1.5rem;
-  }
+.section-location {
+  text-align: center;
 }
 
 .products {
@@ -265,6 +294,7 @@ body {
 
 .products-price {
   line-height: 1.5rem;
+  color: #428584;
 }
 
 .products-button {
@@ -278,6 +308,7 @@ body {
   background: #428584;
   color: #fff;
   cursor: pointer;
+  outline: none;
   margin: 0.75rem 0rem 2rem 0rem;
 }
 
@@ -325,5 +356,79 @@ body {
   .products-text {
     padding-bottom: 0;
   }
+}
+
+.productList .singleThumb {
+  display: none;
+  margin: auto;
+}
+
+ul.productList li.singleThumb {
+  overflow: hidden;
+}
+
+.our-img {
+  text-align: center;
+}
+
+.our-photo {
+  max-width: 1040px;
+  width: 90%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.563rem;
+}
+
+.our-text p {
+  max-width: 1072px;
+  text-align: center;
+  padding: 35px 16px;
+  margin: auto;
+}
+
+.location-block {
+  display: inline-block;
+  text-align: center;
+}
+
+.location-block-text {
+  text-align: center;
+}
+
+.location-img {
+  text-align: center;
+}
+
+.location-photo {
+  max-width: 620px;
+  width: 90%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.563rem;
+  text-align: center;
+}
+
+.location-text p {
+  text-align: left;
+  padding: 35px 16px;
+  color: #778281;
+}
+
+.location-text p a:link, .location-text p a:visited {
+  color: #778281;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.copyright {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #428584;
 }
 /*# sourceMappingURL=style.css.map */
